@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .message {
+            position: relative;
+            padding: 10px;
+            padding-bottom: 20px;
+            background: linear-gradient(45deg, #bb1f1f, #800d0d);
+            border-radius: 10px;
+            border: 1px solid #800d0d;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 65%;
+            min-width: 100px;
+            margin: 20px;
+            transition: background-color 0.3s ease;
+            height: auto;
+        }
+
+        .right {
+            display: flex;
+            justify-content: right;
+        }
+
+        .left {
+            display: flex;
+            justify-content: left;
+        }
+
+        .message2 {
+            position: relative;
+            padding: 10px;
+            padding-bottom: 20px;
+            background: linear-gradient(45deg, #bb1f1f, #800d0d);
+            border-radius: 10px;
+            border: 1px solid #800d0d;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 65%;
+            min-width: 100px;
+            margin: 20px;
+            transition: background-color 0.3s ease;
+            height: auto;
+        }
+
+        .message::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            border: 10px solid transparent;
+            border-top: 15px solid #800d0d;
+            transform: translateY(-50%) rotate(-90deg);
+        }
+
+        .message2::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            border: 10px solid transparent;
+            border-top: 15px solid #bb1f1f;
+            transform: translateY(-50%) rotate(90deg);
+        }
+
+        .time {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-around">
+            <div class=" col-sm-12 col-lg-12 col-md-12 right">
+                <div class="message">Hi there 👋 How can I help
+                    you? <br><span class="time">11:56</span></div>
+            </div>
+            <div class=" col-sm-12 col-lg-12 col-md-12 left">
+                <div class="message2">G<br><span class="time">11:57</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
